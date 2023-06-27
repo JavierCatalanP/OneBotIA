@@ -1,0 +1,59 @@
+Establecer un Método de Pago para OpenAI
+¿Ya has recibido la respuesta "You exceeded your current quota please check your plan and billing details"?
+
+En español este mensaje dice "Has superado tu cuota actual, comprueba los detalles de tu plan y de facturación"
+
+
+Si aún no lo has recibido, lo recibirás en cualquier momento. Lamentablemente utilizar la API de OpenAI no es gratuito.
+
+
+
+Si bien hacer consultas directamente en la página web de ChatGPT no tiene ningún costo (si has elegido el plan gratuito), no es lo mismo usar ChatGPT en la ventana de tu navegador desde el sitio de OpenAI, que usar la API para integrar a ChatGPT en una aplicación externa.
+
+
+
+Claro que al comienzo has podido usar la API gratuitamente, y hacer unas cuantas peticiones sin percibir ningún costo para ti, esto se debe a que cada cuenta nueva trae un "regalo" de u$s 5 para hacer tus primeras pruebas sin pagar nada. Una vez que ese saldo inicial se agota, es necesario establecer un medio de pago para que OpenAI pueda cobrarte por el uso de su API.
+
+
+
+Si quieres conocer el costo de usar la API de OpenAI (que varía según el modelo que utilices), puedes hacer click aquí.
+
+
+
+Lo bueno de este servicio es que no tiene un costo mensual fijo, sino que tu estableces cuánto quieres pagar por mes como máximo, y OpenAI te permitirá consumir saldo en tu tarjeta hasta alcanzar ese límite.
+
+
+
+Ahora veamos cómo establecer un método de pago.
+
+Ingresa a platform.openai.com
+
+En la esquina superior derecha presiona Personal / Manage Account
+
+En la columna de la izquierda selecciona Billing y luego Payment Methods
+
+Allí ingresas los datos del método de pago de tu preferencia.
+
+
+
+Una vez que hayas establecido tu método de pago, puedes establecer tus límites de gasto, de la siguiente manera:
+
+En la columna izquierda, dentro de Billing, selecciona Usage limits
+
+En la etiqueta Hard Limit ("Límite Duro") elige el monto máximo que deseas gastar mensualmente. Si alcanzas este monto, OpenAI comenzará a rechazar tus peticiones con el mensaje que te mostré al principio de esta lección.
+
+En la etiqueta Soft Limit ("Límite Blando") estableces un monto (menor al del Hard Limit) a partir del cual OpenAI te enviará un mensaje por correo electrónico para que sepas que te estás acercando al límite de gastos.
+
+
+
+Tanto en Hard Limit como en Soft Limit puedes poner los valores que tu creas conveniente según tus planes y disponibilidad de crédito, pero si quieres una sugerencia para ser razonable en esta primera etapa de tu aprendizaje, yo creo que estos valores estarán bien:
+
+
+
+Hard Limit: $30
+
+Soft Limit: $20
+
+
+
+Una vez que hayas configurado esto, tal vez debas esperar unos minutos, y al volver a ejecutar tu código, el mensaje de error debería desaparecer.
